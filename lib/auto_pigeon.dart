@@ -175,7 +175,6 @@ Future<int> runCommandLine(
   return exitCode;
 }
 
-/// 驼峰转下划线
 /// AaBbCc -> aa_bb_cc
 String pascalToSnakeCase(String str) {
   return str.replaceAllMapped(RegExp(r'(^[A-Z])|([A-Z])'), (Match match) {

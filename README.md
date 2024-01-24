@@ -5,12 +5,14 @@ It supports adding directory options on top of the base Pigeon options.
 
 usage: `auto_pigeon --input_dir <input files dir path> --java_package <package name> [option]*`
 
+example: `auto_pigeon --input_dir pigeons --java_package com.example`
+
 options:
 
 | Option           | Help                                                                          |
 |------------------|-------------------------------------------------------------------------------|
 | --suffix         | Directory model suffix for generated classes or files. (defaults to "pigeon") |
-| --input_dir      | Path to pigeon. (defaults to "pigeons")                                       |
+| --input_dir      | Path to pigeon directory. (defaults to "pigeons")                             |
 | --dart_out_dir   | Path to generated Dart source directory. (defaults to "lib")                  |
 | --objc_out_dir   | Path to generated Objective-C source and header directory.                    |
 | --swift_out_dir  | Path to generated swift directory. (defaults to "ios/Classes")                |
@@ -20,19 +22,20 @@ options:
 ## Install
 
 Install to Project
+
 ```shell
-# form pub
+# from pub
 dart pub add --dev auto_pigeon
-# form git
+# from git
 dart pub add --dev 'auto_pigeon:{"git":"https://github.com/eitanliu/auto_pigeon.git","ref":"main"}'
 ```
 
 Install to global shell
 
 ```shell
-# form pub
+# from pub
 dart pub global activate auto_pigeon
-# form git
+# from git
 dart pub global activate -sgit git@github.com:eitanliu/auto_pigeon.git
 ```
 

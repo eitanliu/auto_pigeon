@@ -61,7 +61,7 @@ class AutoPigeonArgParser {
     ..addOption(
       'input_dir',
       defaultsTo: 'pigeons',
-      help: 'Path to pigeon.',
+      help: 'Path to pigeon directory.',
     )
     ..addOption(
       'dart_out_dir',
