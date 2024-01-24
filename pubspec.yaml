@@ -1,6 +1,6 @@
 name: auto_pigeon
 description: AutoPigeon extended Pigeon to support configuring the directory for generation.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/eitanliu/auto_pigeon
 repository: https://github.com/eitanliu/auto_pigeon
 
