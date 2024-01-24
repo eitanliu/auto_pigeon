@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:auto_pigeon/auto_pigeon_config.dart';
+import 'package:auto_pigeon/auto_pigeon_options.dart';
 import 'package:collection/collection.dart';
 import 'package:path/path.dart' as path;
 import 'package:pigeon/pigeon_cl.dart' as pigeon;
@@ -217,6 +217,6 @@ void _createParentDirs(String path) {
   }
 }
 
-bool _isNullOrEmpty(String? str) => str == null || str.isEmpty;
+// bool _isNullOrEmpty(String? str) => str == null || str.isEmpty;
 
 bool _isNotNullAndEmpty(String? str) => str != null && str.isNotEmpty;

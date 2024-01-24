@@ -2,6 +2,7 @@ import 'package:args/args.dart';
 import 'package:pigeon/pigeon.dart';
 import 'package:collection/collection.dart';
 
+/// Options used when running the code generator.
 class AutoPigeonOptions {
   /// Directory model suffix that will be appended after all generated classes or file.
   final String? suffix;
@@ -24,6 +25,7 @@ class AutoPigeonOptions {
   /// Path to the kotlin directory that will be generated.
   final String? kotlinOutDir;
 
+  /// Creates a instance of AutoPigeonOptions
   AutoPigeonOptions({
     required this.suffix,
     required this.inputDir,
@@ -34,9 +36,11 @@ class AutoPigeonOptions {
     required this.kotlinOutDir,
   });
 
+  /// Convert command-line arguments to [AutoPigeonOptions].
   static AutoPigeonOptions parseArgs(List<String> args) =>
       AutoPigeonArgParser.parseArgs(args);
 
+  /// String that describes how the tool is used.
   static String get usage => '''
 AutoPigeon extended Pigeon to support configuring the directory for generation.
 It supports adding directory options on top of the base Pigeon options.
@@ -49,7 +53,9 @@ ${AutoPigeonArgParser.usage}
 ${Pigeon.usage}''';
 }
 
+/// Command-line arguments parsing out options and flags from them.
 class AutoPigeonArgParser {
+  /// String that describes how the tool is used.
   static String get usage => _argParser.usage;
 
   static final ArgParser _argParser = ArgParser()
